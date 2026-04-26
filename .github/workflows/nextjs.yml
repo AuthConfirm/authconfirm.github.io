@@ -41,7 +41,7 @@ jobs:
           # If specified, run `pnpm install`
           run_install: # optional, default is null
           # Whether to cache the pnpm store directory
-          cache: # optional, default is false
+          cache: false
           # File path to the pnpm lockfile, which contents hash will be used as a cache key
           cache_dependency_path: # optional, default is pnpm-lock.yaml
           # File path to the package.json to read "packageManager" configuration. This path must be relative to the repository root (GITHUB_WORKSPACE).
