@@ -39,7 +39,7 @@ jobs:
           # Where to store pnpm files
           dest: ~/setup-pnpm
           # If specified, run `pnpm install`
-          run_install: # optional, default is null
+          run_install: true
           # Whether to cache the pnpm store directory
           cache: false
           # File path to the pnpm lockfile, which contents hash will be used as a cache key
