@@ -43,11 +43,11 @@ jobs:
           # Whether to cache the pnpm store directory
           cache: false
           # File path to the pnpm lockfile, which contents hash will be used as a cache key
-          cache_dependency_path: # optional, default is pnpm-lock.yaml
+          cache_dependency_path: pnpm-lock.yaml
           # File path to the package.json to read "packageManager" configuration. This path must be relative to the repository root (GITHUB_WORKSPACE).
-          package_json_file: # optional, default is package.json
+          package_json_file: package.json
           # When set to true, @pnpm/exe, which is a Node.js bundled package, will be installed, enabling using pnpm without Node.js.
-          standalone: # optional, default is false
+          standalone: false
       - name: Checkout
         uses: actions/checkout@v4
       - name: Detect package manager
