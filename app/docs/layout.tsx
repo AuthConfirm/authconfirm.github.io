@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { GSAPWrapper } from "@/components/GSAPWrapper";
 
 export default function DocsLayout({
   children,
@@ -6,11 +7,12 @@ export default function DocsLayout({
   children: ReactNode;
 }) {
   return (
-    <div className="relative z-10 max-w-4xl mx-auto w-full px-6 py-6 flex-1">
-      <article className="glass-panel p-8 md:p-12 rounded-2xl shadow-xl">
-        {children}
-        
-      </article>
-    </div>
+    <GSAPWrapper>
+      <div className="animate-in relative z-10 max-w-4xl mx-auto w-full px-6 py-6 flex-1">
+        <article className="glass-panel p-8 md:p-12 rounded-2xl shadow-xl">
+          {children}
+        </article>
+      </div>
+    </GSAPWrapper>
   );
 }
