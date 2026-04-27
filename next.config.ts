@@ -8,9 +8,11 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+
 };
 
 const withMDX = createMDX({
+  extension: /\.mdx?$/,
   options: {
     remarkPlugins: [
       'remark-mdx-frontmatter',
