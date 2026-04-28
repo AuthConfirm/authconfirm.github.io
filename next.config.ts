@@ -1,7 +1,5 @@
 import type { NextConfig } from "next";
 import createMDX from "@next/mdx";
-import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
-import remarkFrontmatter from 'remark-frontmatter'
 
 const nextConfig: NextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
@@ -16,8 +14,8 @@ const withMDX = createMDX({
   extension: /\.mdx?$/,
   options: {
     remarkPlugins: [
-      remarkMdxFrontmatter,
-      remarkFrontmatter,
+      'remark-mdx-frontmatter',
+      'remark-frontmatter',
     ],
   }
 });
