@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/",
+  basePath: "",
   webpack: (config) => {
     config.module.rules.push({
       test: /\.mdx?$/,
