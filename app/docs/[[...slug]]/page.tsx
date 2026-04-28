@@ -16,6 +16,8 @@ export function generateStaticParams() {
     });
 }
 
+console.log(await generateStaticParams());
+
 export default async function Page({
   params,
 }: {
