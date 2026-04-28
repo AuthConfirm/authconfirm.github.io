@@ -8,18 +8,11 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: "",
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.mdx?$/,
-      use: [
-        {
-          loader: '@mdx-js/loader',
-          /** @type {Options} */
-          options: {/* jsxImportSource: …, otherOptions… */}
-        }
-      ]
-    })
-    return config;
+  
+  turbopack: {
+    rules: {
+      '*.mdx': ['@mdx-js/loader'],
+    },
   },
 };
 
